@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+.container {
+    background-color: #1E1E1E;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    min-height: 100vh; /* Stellt sicher, dass die Box mindestens die Höhe des Ansichtsfensters hat */
+}
+
+h1 {
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* overflow-y: auto; */
+    /* padding-right: 1rem; */
+}
+
+.project {
+    background-color: #2C2C2C;
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project h2 {
+    color: #BB86FC;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.project p {
+    color: #E0E0E0;
+    line-height: 1.6;
+}
+
+.stylish-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    background-color: #fafffa3d;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-details {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.project-details li {
+    background-color: #3A3A3A;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    color: #E0E0E0;
+}
+
+.project-details li strong {
+    color: #BB86FC;
+}
+
+/* Link-Stile */
+.project a {
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Scrollbar Styles */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1E1E1E;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #BB86FC;
+    border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #9966CC;
+}
